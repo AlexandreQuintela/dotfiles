@@ -1,0 +1,39 @@
+[user]
+	name = Alexandre Quintela
+	email = alexandrequintela@me.com
+	signingkey = 
+[push]
+  default = current
+[alias]
+  co = checkout
+  l = log --graph --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset'
+  lol = log --pretty=oneline --abbrev-commit --graph --decorate
+[apply]
+  whitespace = warn
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  ui = true
+[help]
+  autocorrect = 1
+[status]
+  submodule = 1
+[core]
+  editor = mate --wait
+	excludesfile = /Volumes/Dados/Users/alex/.gitignore_global
+[rerere]
+  enabled = true
+[branch]
+  autosetuprebase = always
+[commit]
+	verbose = true
+	template = /Users/alex/.stCommitMsg
+[merge]
+	tool = vimdiff
+[difftool "sourcetree"]
+	cmd = /Applications/DiffMerge.app/Contents/MacOS/DiffMerge --nosplash \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/DiffMerge.app/Contents/MacOS/DiffMerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
+	trustExitCode = true
